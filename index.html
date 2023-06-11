@@ -54,6 +54,7 @@
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation">
@@ -66,14 +67,14 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="#llevame-aqui"
-                >Acerca de mi</a
+                href="#Acerca-de-mi"
+                >Hablemos de mí</a
               >
             </li>
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="#Mis-trabajos"
+                href="#Mis-favoritos"
                 >Trabajos</a
               >
             </li>
@@ -107,10 +108,20 @@
             la educación y actualmente Introducción al desarrollo web
           </p>
           <div class="mb-5 pb-5">
-            <button class="btn btn-lg btn-outline-info text-light me-4">
-              Trabajos
+            <button class="btn btn-lg btn-outline-dark text-light me-4">
+              <a
+                href="#Mis-favoritos"
+                class="text-decoration-none text-light"
+                >Libros favoritos</a
+              >
             </button>
-            <button class="btn btn-lg btn-info text-light">Contacto</button>
+            <button class="btn btn-lg btn btn-outline-secondary text-light me-4">
+              <a
+                href="#Contacto"
+                class="text-decoration-none text-light"
+                >Contacto</a
+              >
+            </button>
           </div>
         </div>
       </div>
@@ -178,7 +189,7 @@
               </p>
               <button
                 type="button"
-                class="btn btn-outline-info"
+                class="btn btn btn-outline-dark"
                 onclick="window.open('https://www.ecured.cu/La_Brecha_(libro)', '_blank')">
                 Ver más
               </button>
@@ -203,7 +214,7 @@
               </p>
               <button
                 type="button"
-                class="btn btn-outline-info"
+                class="btn btn btn-outline-dark"
                 onclick="window.open('https://www.ecured.cu/Don_Quijote_de_la_Mancha', '_blank')">
                 Ver más
               </button>
@@ -227,7 +238,7 @@
               </p>
               <button
                 type="button"
-                class="btn btn-outline-info"
+                class="btn btn btn-outline-dark"
                 onclick="window.open('https://www.planetadelibros.cl/libro-la-legion-perdida/352461', '_blank')">
                 Ver más
               </button>
@@ -239,8 +250,8 @@
 
     <section
       id="Contacto"
-      class="container my-5">
-      <h2 class="display-4 fw-bold text-center my-4">Contáctame</h2>
+      class="container-fluid my-5 bg-secondary text-light">
+      <h2 class="display-4 fw-bold text-center  my-4">Contáctame</h2>
 
       <p class="text-center my-4 d-none d-md-block">
         Si quieres ponerte en contacto conmigo, dejame tu nombre correo y el
@@ -250,29 +261,29 @@
       </p>
 
       <form>
-        <div class="form-group mb-4">
-          <label class="mb-2">Nombre</label>
+        <div class="form-group mb-4 ">
+          <label class="mb-2 text-light">Nombre</label>
           <input
             class="form-control"
             placeholder="Nombre" />
         </div>
 
         <div class="form-group mb-4">
-          <label class="mb-2">Correo electrónico</label>
+          <label class="mb-2 text-light">Correo electrónico</label>
           <input
             class="form-control"
             placeholder="Correo electrónico" />
         </div>
 
         <div class="form-group">
-          <label class="mb-2">Mensaje</label>
+          <label class="mb-2 text-light">Mensaje</label>
           <textarea
             class="form-control"
             placeholder="Escribe aquí tu mensaje"></textarea>
         </div>
 
-        <div class="my-3 text-end">
-          <button class="btn btn-info text-light">Enviar</button>
+        <div class="my-3 text-center">
+          <button class="btn btn-dark text-light">Enviar</button>
         </div>
       </form>
     </section>
@@ -287,3 +298,4 @@
       crossorigin="anonymous"></script>
   </body>
 </html>
+
